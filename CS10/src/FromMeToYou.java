@@ -9,11 +9,11 @@ Course: Computer Science 10
  
 
 */
-public class CS10 {
+public class FromMeToYou {
 
 	public static void main(String[] args) 
 	{
-		//Li Tan
+		// Li Tan
        
 	}
 
