@@ -1,6 +1,6 @@
 /*
 
-Program: CS10.java          Date: 30-March-2022
+Program: FromMeToYou.java          Date: 30-March-2022
 
 
 Author: Li Tan
@@ -9,7 +9,9 @@ Course: Computer Science 10
  
 
 */
-public class FromMeToYou {
+public class 
+FromMeToYou 
+{
 
 	public static void main(String[] args) 
 	{
