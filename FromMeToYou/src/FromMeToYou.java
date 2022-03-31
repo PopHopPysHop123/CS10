@@ -15,8 +15,11 @@ FromMeToYou
 
 	public static void main(String[] args) 
 	{
-		// Li Tan
-       
+		System.out.println("From: Mr. Wilson\r\n"
+				+"Address: Acer Computer, Lab 314\r\n"
+				+ "Date: March 31, 2022\r\n\n"
+				+ "To: Li Tan \r\n\n"
+				+ "Message: Help! I'm trapped inside a computer!");
 	}
 
 }
