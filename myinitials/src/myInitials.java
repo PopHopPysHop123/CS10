@@ -1,6 +1,6 @@
 /*
 
-Program: FromMeToYou.java          Date: 30-March-2022
+Program: myInitials.java          Date: 31-March-2022
 
 
 Author: Li Tan
@@ -15,7 +15,13 @@ myInitials
 
 	public static void main(String[] args) 
 	{
-
+		System.out.println(
+			"+     +++++++ \r"+
+			"+        +\r"+
+			"+        +\r"+
+			"+        +\r"+
+			"+++++    +"
+			);
 	}
 
 }
