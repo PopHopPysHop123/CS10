@@ -23,7 +23,6 @@ public class BingoCard
 			"12    17    38    49    64\r"+
 			"14    19    41    51    69\r"
 			);
-		
 	}
 
 }
