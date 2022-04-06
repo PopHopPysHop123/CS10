@@ -21,7 +21,9 @@ public class PizzaCost
 			int diameter = input.nextInt();
 			float cost = (float) (1.75 + (0.05 * diameter * diameter));
 			System.out.println("Total cost of making the pizza is: " + "$" + (cost));
-		} catch (Exception e) {
+		} 
+		catch (Exception e) 
+		{
 			System.out.println("ERROR");
 		}
 		
