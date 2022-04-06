@@ -27,8 +27,18 @@ public class FromMeToYou
 }
 
 /* Screen Dump
+From: Mr. Wilson
+
+Address: Acer Computer, Lab 314
+
+Date: March 31, 2022
 
 
 
+To: Li Tan 
+
+
+
+Message: Help! I'm trapped inside a computer!
 
  */

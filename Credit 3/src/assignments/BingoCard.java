@@ -28,8 +28,11 @@ public class BingoCard
 }
 
 /* Screen Dump
-
-
-
+ B     I     N     G     O
+ 8    28    44    47    66
+ 2    21    35    57    70
+ 5    27   FREE   54    73
+12    17    38    49    64
+14    19    41    51    69
 
  */

@@ -32,8 +32,8 @@ public class PizzaCost
 }
 
 /* Screen Dump
-
-
-
+Please Enter the diameter of the pizza in inches:
+10
+Total cost of making the pizza is: $6.75
 
  */

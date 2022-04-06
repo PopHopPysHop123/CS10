@@ -27,8 +27,10 @@ public class myInitials
 }
 
 /* Screen Dump
-
-
-
++     +++++++ 
++        +
++        +
++        +
++++++    +
 
  */
