@@ -15,13 +15,14 @@ public class FromMeToYou
 
 	public static void main(String[] args) 
 	{
-		System.out.println(
+		System.out.println
+		(
 			"From: Mr. Wilson\r\n\n"
 			+"Address: Acer Computer, Lab 314\r\n\n"
 			+ "Date: March 31, 2022\r\n\n\n\n"
 			+ "To: Li Tan \r\n\n\n\n"
 			+ "Message: Help! I'm trapped inside a computer!"
-			);
+		);
 	}
 
 }
