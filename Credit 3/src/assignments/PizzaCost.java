@@ -17,10 +17,10 @@ public class PizzaCost
 	public static void main(String[] args) 
 	{
 		try (Scanner input = new Scanner(System.in)) {
-			System.out.println("Please Enter the diameter of the pizza in inches:");
+			System.out.print("Please Enter the diameter of the pizza in inches: ");
 			int diameter = input.nextInt();
 			float cost = (float) (1.75 + (0.05 * diameter * diameter));
-			System.out.println("Total cost of making the pizza is: " + "$" + (cost));
+			System.out.println("\rTotal cost of making the pizza is: " + "$" + (cost));
 		} 
 		catch (Exception e) 
 		{
@@ -32,8 +32,8 @@ public class PizzaCost
 }
 
 /* Screen Dump
-Please Enter the diameter of the pizza in inches:
-10
+Please Enter the diameter of the pizza in inches: 10
+
 Total cost of making the pizza is: $6.75
 
  */
