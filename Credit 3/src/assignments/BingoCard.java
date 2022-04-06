@@ -15,7 +15,8 @@ public class BingoCard
 
 	public static void main(String[] args) 
 	{
-		System.out.println(
+		System.out.println
+		(
 			" B     I     N     G     O\r"+
 			" 8    28    44    47    66\r"+
 			" 2    21    35    57    70\r"+

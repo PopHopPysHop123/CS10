@@ -16,7 +16,8 @@ public class PizzaCost
 
 	public static void main(String[] args) 
 	{
-		try (Scanner input = new Scanner(System.in)) {
+		try (Scanner input = new Scanner(System.in)) 
+		{
 			System.out.print("Please Enter the diameter of the pizza in inches: ");
 			int diameter = input.nextInt();
 			float cost = (float) (1.75 + (0.05 * diameter * diameter));
