@@ -32,7 +32,10 @@ public class Assignment6 {
 			String hobby = input.nextLine();
 			System.out.println("Hello, your name is " + firstname + " " + lastname + ", you are currently in grade " + grade + " at " + school + ". Your favourite hobby is " + hobby + ".");
 		}
-		
+		catch (Exception e) 
+		{
+			System.out.println("ERROR");
+		}
 
 	}
 
