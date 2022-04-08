@@ -1,4 +1,4 @@
-package assignments;
+package cse1110_assignments;
 /*
 
 Program: FromMeToYou.java          Date: 30-March-2022

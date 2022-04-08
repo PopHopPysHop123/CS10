@@ -1,4 +1,4 @@
-package assignments;
+package cse1110_assignments;
 /*
 
 Program: BingoCard.java          Date: 31-March-2022
