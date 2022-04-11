@@ -15,22 +15,21 @@ public class Assignment6 {
 
 	public static void main(String[] args) 
 	{
-		try (Scanner input = new Scanner(System.in)) 
+		try (Scanner userinput = new Scanner(System.in)) 
 		{
 			System.out.print("What is your first name? ");
-			String firstname = input.nextLine();
+			String firstname = userinput.nextLine();
 			System.out.print("What is your last name? ");
-			String lastname = input.nextLine();
+			String lastname = userinput.nextLine();
 			System.out.print("What grade are you in? ");
-			int grade = input.nextInt();
-			System.out.print("");
+			int grade = userinput.nextInt();
 			@SuppressWarnings("unused")
-			String unused = input.nextLine();//Prevents the code from skipping the next question
+			String noskip = userinput.nextLine();//Prevents the code from skipping the next question
 			System.out.print("What school do you attend? ");
-			String school = input.nextLine();
+			String school = userinput.nextLine();
 			System.out.print("What is your favourite hobby? ");
-			String hobby = input.nextLine();
-			System.out.println("Hello, your name is " + firstname + " " + lastname + ", you are currently in grade " + grade + " at " + school + ". Your favourite hobby is " + hobby + ".");
+			String hobby = userinput.nextLine();
+			System.out.print("\rHello, your name is " + firstname + " " + lastname + ", you are currently in grade " + grade + " at " + school + ". Your favourite hobby is " + hobby + ".");
 		}
 		catch (Exception e) 
 		{
