@@ -23,7 +23,7 @@ public class BingoCard
 			" 5    27   FREE   54    73\r"+
 			"12    17    38    49    64\r"+
 			"14    19    41    51    69\r"
-			);
+		);
 	}
 
 }
