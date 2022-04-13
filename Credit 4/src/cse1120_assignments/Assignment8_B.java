@@ -11,7 +11,8 @@ Course: Computer Science 10
 
 */
 import java.util.Scanner;
-public class Assignment8_B {
+public class Assignment8_B 
+{
 
 	public static void main(String[] args) 
 	{
