@@ -98,7 +98,7 @@ public class Credit4_GUI {
 			{
 				String FN = FNt.getText();
 				String LN = LNt.getText();
-				Dis.setText("First name: " + FN + "      Last name: " + LN);
+				Dis.setText("First name: " + FN + "        Last name: " + LN);
 			}
 		});
 		SB.setBounds(229, 11, 146, 55);
