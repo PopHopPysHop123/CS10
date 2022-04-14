@@ -1,7 +1,7 @@
-package cse1120_assignments;
+package assignments;
 /*
 
-Program: Assignment8_B.java          Date: 12-April-2022
+Program: Assignment8_A.java          Date: 12-April-2022
 
 
 Author: Li Tan
@@ -11,21 +11,19 @@ Course: Computer Science 10
 
 */
 import java.util.Scanner;
-public class Assignment8_B 
+public class Assignment8_A 
 {
 
 	public static void main(String[] args) 
 	{
 		try (Scanner userinput = new Scanner(System.in))
 		{
-			System.out.print("Please enter a three digit number: ");
+			System.out.print("Please enter a two digit number: ");
 			String number = userinput.nextLine();
-			char hundreds = number.charAt(0);
-			char tens = number.charAt(1);
-			char ones = number.charAt(2);
+			char tens = number.charAt(0);
+			char ones = number.charAt(1);
 			System.out.println
 			(
-				"\rThe hundreds-place digit is: " + hundreds +
 				"\rThe tens-place digit is: " + tens +
 				"\rThe ones-place digit is: " + ones
 			);
@@ -38,10 +36,9 @@ public class Assignment8_B
 
 }
 /* Screen Dump
-Please enter a three digit number: 479
+Please enter a two digit number: 24
 
-The hundreds-place digit is: 4
-The tens-place digit is: 7
-The ones-place digit is: 9
+The tens-place digit is: 2
+The ones-place digit is: 4
 
  */

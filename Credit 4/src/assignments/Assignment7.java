@@ -1,4 +1,4 @@
-package cse1120_assignments;
+package assignments;
 /*
 
 Program: Assignment7.java          Date: 11-April-2022

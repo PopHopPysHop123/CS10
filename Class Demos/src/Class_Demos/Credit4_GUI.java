@@ -1,4 +1,4 @@
-package cse1120_assignments;
+package Class_Demos;
 
 import java.awt.EventQueue;
 

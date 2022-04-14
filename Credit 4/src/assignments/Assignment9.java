@@ -1,4 +1,4 @@
-package cse1120_assignments;
+package assignments;
 /*
 
 Program: Assignment9.java          Date: 12-April-2022
@@ -31,10 +31,21 @@ public class Assignment9
 			System.out.println("\r" + int2 + " / " + int1 + " = " + divide2);
 			System.out.println(int2 + " % " + int1 + " = " + modulus2);
 		}
+		catch (Exception e) 
+		{
+			System.out.println("ERROR");
+		}
 	}
 
 }
 /* Screen Dump
+Please enter an integer: 14
+Please enter a second integer: 4
 
+14 / 4 = 3
+14 % 4 = 2
+
+4 / 14 = 0
+4 % 14 = 4
 
  */

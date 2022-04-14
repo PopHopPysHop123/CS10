@@ -1,4 +1,4 @@
-package cse1110_assignments;
+package assignments;
 /*
 
 Program: myInitials.java          Date: 31-March-2022

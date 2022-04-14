@@ -1,4 +1,4 @@
-package cse1110_assignments;
+package assignments;
 /*
 
 Program: PizzaCost.java          Date: 5-April-2022
