@@ -1,17 +1,19 @@
-package Class_Demos;
+package class_demos;
 
 import java.awt.EventQueue;
+import java.awt.Window;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import javax.swing.JComponent;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class Credit4_GUI {
+public class Credit4 {
 
 	private JFrame frame;
 	private JTextField FNt;
@@ -31,7 +33,7 @@ public class Credit4_GUI {
 			public void run() {
 				try {
 					Credit4_GUI window = new Credit4_GUI();
-					window.frame.setVisible(true);
+					((JComponent) window.frame).setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -41,8 +43,9 @@ public class Credit4_GUI {
 
 	/**
 	 * Create the application.
+	 * @wbp.parser.entryPoint
 	 */
-	public Credit4_GUI() {
+	public Credit4() {
 		initialize();
 	}
 
@@ -98,13 +101,24 @@ public class Credit4_GUI {
 			{
 				String FN = FNt.getText();
 				String LN = LNt.getText();
-				Dis.setText("First name: " + FN + "        Last name: " + LN);
+				String Ag = Agt.getText();
+				Dis.setText("First name: " + FN + "        Last name: " + LN + "and your age is: " + Ag);
+				
 			}
 		});
 		SB.setBounds(229, 11, 146, 55);
 		panel.add(SB);
 		
 		Cl = new JButton("Clear");
+		Cl.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				FN.setText(" ");
+				LN.setText(" ");
+				Ag.setText(" ");
+			}
+		});
 		Cl.setBounds(229, 71, 146, 55);
 		panel.add(Cl);
 		

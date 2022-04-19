@@ -19,16 +19,23 @@ public class Assignment8_B
 		try (Scanner userinput = new Scanner(System.in))
 		{
 			System.out.print("Please enter a three digit number: ");
-			String number = userinput.nextLine();
-			char hundreds = number.charAt(0);
-			char tens = number.charAt(1);
-			char ones = number.charAt(2);
-			System.out.println
-			(
-				"\rThe hundreds-place digit is: " + hundreds +
-				"\rThe tens-place digit is: " + tens +
-				"\rThe ones-place digit is: " + ones
-			);
+			int number = userinput.nextInt();
+			if (number <= 999) 
+			{
+				int hundreds = number / 100;
+				int tens = number % (hundreds * 100) / 10;
+				int ones = (number % (hundreds * 100)) % (tens * 10);
+				System.out.println
+				(
+					"\rThe hundreds-place digit is: " + hundreds +
+					"\rThe tens-place digit is: " + tens +
+					"\rThe ones-place digit is: " + ones
+				);
+			}
+			else
+			{
+				System.out.println("ERROR");
+			}
 		}
 		catch (Exception e) 
 		{

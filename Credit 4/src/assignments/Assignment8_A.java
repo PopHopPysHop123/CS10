@@ -19,14 +19,21 @@ public class Assignment8_A
 		try (Scanner userinput = new Scanner(System.in))
 		{
 			System.out.print("Please enter a two digit number: ");
-			String number = userinput.nextLine();
-			char tens = number.charAt(0);
-			char ones = number.charAt(1);
-			System.out.println
-			(
-				"\rThe tens-place digit is: " + tens +
-				"\rThe ones-place digit is: " + ones
-			);
+			int number = userinput.nextInt();
+			if (number <= 99)
+			{
+				int tens = number / 10;
+				int ones = number % (tens * 10);
+				System.out.println
+				(
+					"\rThe tens-place digit is: " + tens +
+					"\rThe ones-place digit is: " + ones
+				);
+			}
+			else
+			{
+				System.out.println("ERROR");
+			}
 		}
 		catch (Exception e) 
 		{
