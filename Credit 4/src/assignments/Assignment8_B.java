@@ -23,8 +23,8 @@ public class Assignment8_B
 			if (number <= 999) 
 			{
 				int hundreds = number / 100;
-				int tens = number % (hundreds * 100) / 10;
-				int ones = (number % (hundreds * 100)) % (tens * 10);
+				int tens = (number % 100) / 10;
+				int ones = (number % 100) % 10;
 				System.out.println
 				(
 					"\rThe hundreds-place digit is: " + hundreds +

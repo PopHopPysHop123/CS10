@@ -23,7 +23,7 @@ public class Assignment8_A
 			if (number <= 99)
 			{
 				int tens = number / 10;
-				int ones = number % (tens * 10);
+				int ones = number % 10;
 				System.out.println
 				(
 					"\rThe tens-place digit is: " + tens +
