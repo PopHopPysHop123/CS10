@@ -60,7 +60,7 @@ public class Special {
 		panel.add(td);
 		
 		TD = new JTextField();
-		TD.setBounds(26, 56, 93, 32);
+		TD.setBounds(26, 56, 93, 20);
 		panel.add(TD);
 		TD.setColumns(10);
 		
@@ -73,10 +73,28 @@ public class Special {
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-				String twoDigit = TD.getText();
-				int twoD = Integer.parseInt(twoDigit);
-				int firstD = twoD / 10;
-				dis.setText(""+firstD);
+				String twoDigit = TD.getText();//record the two digits
+				
+				int twoD = Integer.parseInt(twoDigit);//get the integer part
+				
+				int firstD = twoD / 10;//grab the first digit
+				int secondD = twoD % 10;//grab the second digit
+				
+				int sum = firstD + secondD;//record the sum
+				
+				int prdc = firstD * secondD;//record the product
+				
+				int check = sum + prdc;
+				
+				if(check == twoD)
+				{
+					dis.setText(twoD + " is a special two digit number.");
+				}
+				else
+				{
+					dis.setText(twoD + " is not a special two digit number.");
+				}
+				//dis.setText(" "+firstD+" "+secondD+" "+sum+" "+prdc);//display the special number
 				//int sum = 
 			}
 		});
@@ -84,8 +102,12 @@ public class Special {
 		panel.add(btnNewButton);
 		
 		JButton btnClear = new JButton("Clear");
-		btnClear.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+		btnClear.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				TD.setText("");
+				dis.setText("");
 			}
 		});
 		btnClear.setBounds(182, 92, 102, 43);

@@ -18,25 +18,25 @@ public class Assignment10
 	{
 		try (Scanner userinput = new Scanner(System.in))
 		{
-			for (int i = 0; i < 3;i++)
+			for (int i = 0; i < 3;i++)//repeat the code 3 times
 			{
-				System.out.print("Please enter an integer: ");
-				int userint = userinput.nextInt();
+				System.out.print("Please enter an integer: ");//ask the user to enter an integer
+				int userint = userinput.nextInt();//record the user's input
 				
 				if (userint % 2 == 0)
 				{
-					System.out.print(userint + " is even.\r");
+					System.out.print(userint + " is even.\r");//if the user input is even, display that the input is even
 				}
 				else
 				{
-					System.out.print(userint + " is odd.\r");
+					System.out.print(userint + " is odd.\r");//if the user input is odd, display that the input is odd
 				}
 			}
 		}
 		
 		catch (Exception e) 
 		{
-			System.out.println("ERROR");
+			System.out.println("ERROR");//display "ERROR" when the code doesn't work
 		}
 	}
 
