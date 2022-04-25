@@ -25,38 +25,38 @@ public class Assignment11
 			int secondD = (userdigits % 100) / 10;//record the second digit
 			int thirdD = (userdigits % 100) % 10;//record the third digit
 			
-			int large = 0;//create a variable for the largest digit
-			int small = 0;//create a variable for the smallest digit
+			int large = 0;//create an integer for the largest digit
+			int small = 0;//create an integer for the smallest digit
 			
 			if ((thirdD >= secondD)&&(secondD >= firstD))
 			{
-				large = thirdD; //record the third digit as the largest
-				small = firstD; //record the first digit as the smallest
+				large = thirdD; //third digit is the largest
+				small = firstD; //first digit is the smallest
 			}
 			else if ((firstD >= secondD)&&(secondD >= thirdD))
 			{
-				large = firstD;//record the first digit as the largest
-				small = thirdD;//record the third digit as the smallest
+				large = firstD;//first digit is the largest
+				small = thirdD;//third digit is the smallest
 			}
 			else if ((secondD >= firstD)&&(firstD >= thirdD))
 			{
-				large = secondD; //record the second digit as the largest
-				small = thirdD;//record the third digit as the smallest
+				large = secondD;//second digit is the largest
+				small = thirdD;//third digit is the smallest
 			}
 			else if ((thirdD >= firstD)&&(firstD >= secondD))
 			{
-				large = thirdD;//record the third digit as the largest
-				small = secondD;//record the second digit as the smallest
+				large = thirdD;//third digit is the largest
+				small = secondD;//second digit is the smallest
 			}
 			else if ((secondD >= thirdD)&&(thirdD >= firstD))
 			{
-				large = secondD;//record the second digit as the largest
-				small = firstD; //record the first digit as the smallest
+				large = secondD;//second digit is the largest
+				small = firstD; //first digit is the smallest
 			}
-			else if ((firstD >= thirdD)&&(thirdD >= secondD))
+			else
 			{
-				large = firstD;//record the first digit as the largest
-				small = secondD;//record the second digit as the smallest
+				large = firstD;//first digit is the largest
+				small = secondD;//second digit is the smallest
 			}
 			
 			int sum = firstD + secondD + thirdD;//record the sum of all of the digits
