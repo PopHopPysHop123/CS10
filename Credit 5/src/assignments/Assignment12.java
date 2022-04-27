@@ -52,7 +52,7 @@ public class Assignment12
 				letter_gr = "F";
 			}
 			
-			System.out.println("The corresponding letter grade is: " + letter_gr);
+			System.out.println("The corresponding letter grade is: " + letter_gr);//display the letter grade
 		}
 		
 		catch (Exception e)

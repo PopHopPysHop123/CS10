@@ -28,35 +28,35 @@ public class Assignment11
 			int large = 0;//create an integer for the largest digit
 			int small = 0;//create an integer for the smallest digit
 			
-			if ((thirdD >= secondD)&&(secondD >= firstD))
+			if ((thirdD >= secondD)&&(secondD >= firstD))//compares all of the digits to each other to find the largest and smallest
 			{
-				large = thirdD; //third digit is the largest
-				small = firstD; //first digit is the smallest
+				large = thirdD; 
+				small = firstD; 
 			}
 			else if ((firstD >= secondD)&&(secondD >= thirdD))
 			{
-				large = firstD;//first digit is the largest
-				small = thirdD;//third digit is the smallest
+				large = firstD;
+				small = thirdD;
 			}
 			else if ((secondD >= firstD)&&(firstD >= thirdD))
 			{
-				large = secondD;//second digit is the largest
-				small = thirdD;//third digit is the smallest
+				large = secondD;
+				small = thirdD;
 			}
 			else if ((thirdD >= firstD)&&(firstD >= secondD))
 			{
-				large = thirdD;//third digit is the largest
-				small = secondD;//second digit is the smallest
+				large = thirdD;
+				small = secondD;
 			}
 			else if ((secondD >= thirdD)&&(thirdD >= firstD))
 			{
-				large = secondD;//second digit is the largest
-				small = firstD; //first digit is the smallest
+				large = secondD;
+				small = firstD;
 			}
 			else
 			{
-				large = firstD;//first digit is the largest
-				small = secondD;//second digit is the smallest
+				large = firstD;
+				small = secondD;
 			}
 			
 			int sum = firstD + secondD + thirdD;//record the sum of all of the digits
