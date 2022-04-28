@@ -46,7 +46,9 @@ public class Assignment13
 			
 			double total = pricepercopy * copies;//record the total cost
 			
-			System.out.println("Price per copy is: $" + pricepercopy + "\rTotal cost is: $" + total);//display the price per copy and the total cost
+			double actualtotal = (double) (Math.round(total*100.0)/100.0);//round the total to two decimal places
+			
+			System.out.println("Price per copy is: $" + pricepercopy + "\rTotal cost is: $" + actualtotal);//display the price per copy and the total cost
 		}
 		
 		catch (Exception e)

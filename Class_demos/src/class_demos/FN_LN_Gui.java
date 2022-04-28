@@ -2,20 +2,15 @@ package class_demos;
 
 import java.awt.EventQueue;
 import java.awt.Window;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import javax.swing.JComponent;
-
 import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
 import java.awt.event.ActionEvent;
-import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
+
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
 
 public class FN_LN_Gui {
 
@@ -29,14 +24,21 @@ public class FN_LN_Gui {
 	private JLabel Dis;
 	private JComboBox AgCB;
 	private JButton CL;
+	
+	
+	ImageIcon img1 = new ImageIcon("../Class_demos/src/class_demos/logo.png");
 
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
+	public static void main(String[] args)
+	{
+		EventQueue.invokeLater(new Runnable() 
+		{
+			public void run()
+			{
+				try
+				{
 					FN_LN_Gui window = new FN_LN_Gui();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
@@ -50,14 +52,16 @@ public class FN_LN_Gui {
 	 * Create the application.
 	 * @wbp.parser.entryPoint
 	 */
-	public FN_LN_Gui() {
+	public FN_LN_Gui()
+	{
 		initialize();
 	}
 
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize() {
+	private void initialize() 
+	{
 		frame = new JFrame();
 		frame.setBounds(100, 100, 494, 325);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -94,8 +98,13 @@ public class FN_LN_Gui {
 		
 		Dis = new JLabel("");
 		Dis.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		Dis.setBounds(0, 156, 478, 119);
+		Dis.setBounds(256, 158, 212, 106);
 		panel.add(Dis);
+		
+		JLabel img = new JLabel("");
+		img.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		img.setBounds(10, 158, 236, 106);
+		panel.add(img);
 		
 		AgCB = new JComboBox();
 		AgCB.setModel(new DefaultComboBoxModel(new String[] {"Grade 10", "Grade 11", "Grade 12"}));
@@ -105,7 +114,7 @@ public class FN_LN_Gui {
 		SB = new JButton("Submit");
 		SB.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		SB.setBackground(new Color(0, 204, 51));
-		SB.setForeground(Color.WHITE);
+		SB.setForeground(new Color(255, 255, 255));
 		SB.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e)
@@ -117,6 +126,7 @@ public class FN_LN_Gui {
 				if(AgCB.getSelectedItem().equals("Grade 10"))
 				{
 					grade = 10;
+					img.setIcon(img1);
 				}
 				else if(AgCB.getSelectedItem().equals("Grade 11"))
 				{
@@ -129,6 +139,8 @@ public class FN_LN_Gui {
 				
 				Dis.setText("First name: " + FN + "         Last name: " + LN + "        Your grade is: " + grade);
 				
+			}
+			public void actionPerformed(ActionEvent e) {
 			}
 		});
 		SB.setBounds(229, 11, 146, 55);
@@ -150,6 +162,8 @@ public class FN_LN_Gui {
 		});
 		CL.setBounds(229, 71, 146, 55);
 		panel.add(CL);
+		
+		
 	
 		
 	}
