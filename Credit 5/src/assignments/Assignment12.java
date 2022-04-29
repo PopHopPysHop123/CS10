@@ -24,32 +24,32 @@ public class Assignment12
 			
 			switch(grade)
 			{
-			case 50,51,52,53,54://letter grade is D
-				letter_gr = "D"; break;
+				case 50,51,52,53,54://letter grade is D
+					letter_gr = "D"; break;
 			
-			case 55,56,57,58,59://letter grade is D+
-				letter_gr = "D+"; break;
+				case 55,56,57,58,59://letter grade is D+
+					letter_gr = "D+"; break;
+					
+				case 60,61,62,63,64://letter grade is C
+					letter_gr = "C"; break;
 				
-			case 60,61,62,63,64://letter grade is C
-				letter_gr = "C"; break;
+				case 65,66,67,68,69://letter grade is C+
+					letter_gr = "C+"; break;
 				
-			case 65,66,67,68,69://letter grade is C+
-				letter_gr = "C+"; break;
+				case 70,71,72,73,74://letter grade is B
+					letter_gr = "B"; break;
+					
+				case 75,76,77,78,79://letter grade is B+
+					letter_gr = "B+"; break;
 				
-			case 70,71,72,73,74://letter grade is B
-				letter_gr = "B"; break;
+				case 80,81,82,83,84,85,86,87,88,89://letter grade is A
+					letter_gr = "A"; break;
 				
-			case 75,76,77,78,79://letter grade is B+
-				letter_gr = "B+"; break;
+				case 90,91,92,93,94,95,96,97,98,99,100://letter grade is A+
+					letter_gr = "A+"; break;
 				
-			case 80,81,82,83,84,85,86,87,88,89://letter grade is A
-				letter_gr = "A"; break;
-				
-			case 90,91,92,93,94,95,96,97,98,99,100://letter grade is A+
-				letter_gr = "A+"; break;
-				
-			default://letter grade is F
-				letter_gr = "F";
+				default://letter grade is F
+					letter_gr = "F";
 			}
 			
 			System.out.println("The corresponding letter grade is: " + letter_gr);//display the letter grade

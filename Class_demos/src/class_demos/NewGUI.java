@@ -1,18 +1,13 @@
 package class_demos;
 
-import java.awt.EventQueue;
-
 import javax.swing.*;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.Font;
-
+import java.awt.*;
+import java.awt.event.*;
 
 public class NewGUI {
 
 	private JFrame frame;
-	ImageIcon img1 = new ImageIcon("/Class_demos/src/class_demos/logo.png");
+	ImageIcon img1 = new ImageIcon("../Class_demos/src/class_demos/logo.png");
 	/**
 	 * Launch the application.
 	 */
