@@ -62,7 +62,7 @@ public class Assignment12
 	}
 
 }
-/* Screen Dump
+/* Screen Dump 
 Please enter a grade percentage: 67
 The corresponding letter grade is: C+
- */ 
+ */
