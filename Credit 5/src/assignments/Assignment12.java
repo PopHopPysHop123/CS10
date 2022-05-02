@@ -18,8 +18,8 @@ public class Assignment12
 	{
 		try (Scanner userinput = new Scanner(System.in))
 		{
-			System.out.print("Please enter a grade percentage: ");//prompt the user for a grade percentage
-			int grade = userinput.nextInt();//record the user's input
+			System.out.print("Please enter a grade percentage: ");//prompts the user for a grade percentage
+			int grade = userinput.nextInt();//records the user's input
 			String letter_gr = "";//creates a string for the letter grade
 			
 			switch(grade)
@@ -52,12 +52,12 @@ public class Assignment12
 					letter_gr = "F";
 			}
 			
-			System.out.println("The corresponding letter grade is: " + letter_gr);//display the letter grade
+			System.out.println("The corresponding letter grade is: " + letter_gr);//displays the letter grade
 		}
 		
 		catch (Exception e)
 		{
-			System.out.println("ERROR");//display "ERROR" when the code doesn't work
+			System.out.println("ERROR");//displays "ERROR" when the code doesn't work
 		}
 	}
 

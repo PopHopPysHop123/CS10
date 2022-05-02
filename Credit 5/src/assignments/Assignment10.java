@@ -18,10 +18,10 @@ public class Assignment10
 	{
 		try (Scanner userinput = new Scanner(System.in))
 		{
-			for (int i = 0; i < 3;i++)//repeat the code 3 times
+			for (int i = 0; i < 3;i++)//repeats the code 3 times
 			{
-				System.out.print("Please enter an integer: ");//ask the user to enter an integer
-				int userint = userinput.nextInt();//record the user's input
+				System.out.print("Please enter an integer: ");//asks the user to enter an integer
+				int userint = userinput.nextInt();//records the user's input
 				
 				if (userint % 2 == 0)
 				{
@@ -36,7 +36,7 @@ public class Assignment10
 		
 		catch (Exception e) 
 		{
-			System.out.println("ERROR");//display "ERROR" when the code doesn't work
+			System.out.println("ERROR");//displays "ERROR" when the code doesn't work
 		}
 	}
 

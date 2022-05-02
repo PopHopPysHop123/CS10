@@ -18,10 +18,10 @@ public class Assignement14
 	{
 		try (Scanner userinput = new Scanner(System.in))
 		{
-			System.out.print("How old are you? ");//prompt the user for an age
-			int age = userinput.nextInt();//record the user's age
+			System.out.print("How old are you? ");//prompts the user for an age
+			int age = userinput.nextInt();//records the user's age
 			
-			String stage = "";//create a variable for the stage that the user is at in life
+			String stage = "";//creates a variable for the stage that the user is at in life
 			if (age > 18)//the user is an adult
 			{
 				stage = "adult";
@@ -41,12 +41,12 @@ public class Assignement14
 				}
 			}
 			
-			System.out.println("You are a(n) " + stage + ".");//display what stage the user is at
+			System.out.println("You are a(n) " + stage + ".");//displays what stage the user is at
 		}
 		
 		catch (Exception e)
 		{
-			System.out.println("ERROR");//display "ERROR" when the code doesn't work
+			System.out.println("ERROR");//displays "ERROR" when the code doesn't work
 		}
 	}
 

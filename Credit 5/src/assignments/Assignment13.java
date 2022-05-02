@@ -18,10 +18,10 @@ public class Assignment13
 	{
 		try (Scanner userinput = new Scanner(System.in))
 		{
-			System.out.print("Please enter the number of copies to be printed: ");//prompt the user for the number of copies
-			int copies = userinput.nextInt();//record the user's input
+			System.out.print("Please enter the number of copies to be printed: ");//prompts the user for the number of copies
+			int copies = userinput.nextInt();//records the user's input
 			
-			double pricepercopy = 0;//create a double for the price per copy
+			double pricepercopy = 0;//creates a double for the price per copy
 			
 			if (copies>1000)
 			{
@@ -44,16 +44,16 @@ public class Assignment13
 				pricepercopy = 0.30;//each copy is $0.30
 			}
 			
-			double total = pricepercopy * copies;//record the total cost
+			double total = pricepercopy * copies;//records the total cost
 			
-			double actualtotal = (double) (Math.round(total*100.0)/100.0);//round the total to two decimal places
+			double actualtotal = (double) (Math.round(total*100.0)/100.0);//rounds the total to two decimal places
 			
-			System.out.println("Price per copy is: $" + pricepercopy + "\rTotal cost is: $" + actualtotal);//display the price per copy and the total cost
+			System.out.println("Price per copy is: $" + pricepercopy + "\rTotal cost is: $" + actualtotal);//displays the price per copy and the total cost
 		}
 		
 		catch (Exception e)
 		{
-			System.out.println("ERROR");//display "ERROR" when the code doesn't work
+			System.out.println("ERROR");//displays "ERROR" when the code doesn't work
 		}
 	}
 

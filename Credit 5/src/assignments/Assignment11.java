@@ -18,15 +18,15 @@ public class Assignment11
 	{
 		try (Scanner userinput = new Scanner(System.in))
 		{
-			System.out.print("Please enter any three digits: ");//ask the user for three digits
-			int userdigits = userinput.nextInt();//record the user's input
+			System.out.print("Please enter any three digits: ");//asks the user for three digits
+			int userdigits = userinput.nextInt();//records the user's input
 			
-			int firstD = userdigits / 100;//record the first digit
-			int secondD = (userdigits % 100) / 10;//record the second digit
-			int thirdD = (userdigits % 100) % 10;//record the third digit
+			int firstD = userdigits / 100;//records the first digit
+			int secondD = (userdigits % 100) / 10;//records the second digit
+			int thirdD = (userdigits % 100) % 10;//records the third digit
 			
-			int large = 0;//create an integer for the largest digit
-			int small = 0;//create an integer for the smallest digit
+			int large = 0;//creates an integer for the largest digit
+			int small = 0;//creates an integer for the smallest digit
 			
 			if ((thirdD >= secondD)&&(secondD >= firstD))//compares all of the digits to each other to find the largest and smallest
 			{
@@ -59,13 +59,13 @@ public class Assignment11
 				small = secondD;
 			}
 			
-			int sum = firstD + secondD + thirdD;//record the sum of all of the digits
+			int sum = firstD + secondD + thirdD;//records the sum of all of the digits
 			
-			int product = firstD * secondD * thirdD;//record the product of all of the digits
+			int product = firstD * secondD * thirdD;//records the product of all of the digits
 			
-			int av = sum / 3;//record the average of all of the digits
+			int av = sum / 3;//records the average of all of the digits
 			
-			System.out.println//display the results to the user
+			System.out.println//displays the results to the user
 			(
 				"The largest digit is: " + large +
 				"\rThe smallest digit is:" + small +
@@ -77,7 +77,7 @@ public class Assignment11
 		
 		catch (Exception e)
 		{
-			System.out.println("ERROR");//display "ERROR" when the code doesn't work
+			System.out.println("ERROR");//displays "ERROR" when the code doesn't work
 		}
 	}
 
