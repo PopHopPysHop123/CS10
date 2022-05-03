@@ -21,7 +21,7 @@ public class Assignement14
 			System.out.print("How old are you? ");//prompts the user for an age
 			int age = userinput.nextInt();//records the user's age
 			
-			String stage = "";//creates a variable for the stage that the user is at in life
+			String stage = "";//creates a variable for the stage that the user is at
 			if (age > 18)//the user is an adult
 			{
 				stage = "adult";

@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
+import java.awt.Color;
 
 public class Special {
 
@@ -69,6 +70,8 @@ public class Special {
 		panel.add(dis);
 		
 		JButton btnNewButton = new JButton("Enter");
+		btnNewButton.setForeground(Color.BLACK);
+		btnNewButton.setBackground(Color.GREEN);
 		btnNewButton.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
@@ -102,6 +105,9 @@ public class Special {
 		panel.add(btnNewButton);
 		
 		JButton btnClear = new JButton("Clear");
+		btnClear.setForeground(Color.WHITE);
+		btnClear.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		btnClear.setBackground(Color.RED);
 		btnClear.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e)

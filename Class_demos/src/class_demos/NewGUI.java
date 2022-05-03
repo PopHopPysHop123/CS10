@@ -7,7 +7,7 @@ import java.awt.event.*;
 public class NewGUI {
 
 	private JFrame frame;
-	ImageIcon img1 = new ImageIcon("../Class_demos/src/class_demos/logo.png");
+	ImageIcon img1 = new ImageIcon("../Class_demos/src/class_demos/Gull_portrait_ca_usa.jpg");
 	/**
 	 * Launch the application.
 	 */

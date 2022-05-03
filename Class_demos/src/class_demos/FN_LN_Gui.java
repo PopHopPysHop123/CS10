@@ -24,9 +24,7 @@ public class FN_LN_Gui {
 	private JLabel Dis;
 	private JComboBox AgCB;
 	private JButton CL;
-	
-	
-	ImageIcon img1 = new ImageIcon("../Class_demos/src/class_demos/logo.png");
+	private JPanel panel_1;
 
 	/**
 	 * Launch the application.
@@ -59,6 +57,9 @@ public class FN_LN_Gui {
 
 	/**
 	 * Initialize the contents of the frame.
+	 */
+	/**
+	 * 
 	 */
 	private void initialize() 
 	{
@@ -98,13 +99,8 @@ public class FN_LN_Gui {
 		
 		Dis = new JLabel("");
 		Dis.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		Dis.setBounds(256, 158, 212, 106);
+		Dis.setBounds(10, 158, 295, 106);
 		panel.add(Dis);
-		
-		JLabel img = new JLabel("");
-		img.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		img.setBounds(10, 158, 236, 106);
-		panel.add(img);
 		
 		AgCB = new JComboBox();
 		AgCB.setModel(new DefaultComboBoxModel(new String[] {"Grade 10", "Grade 11", "Grade 12"}));
@@ -117,6 +113,7 @@ public class FN_LN_Gui {
 		SB.setForeground(new Color(255, 255, 255));
 		SB.addActionListener(new ActionListener() 
 		{
+			@SuppressWarnings("unused")
 			public void actionPerformed(ActionEvent e)
 			{
 				String FN = FNt.getText();
@@ -126,21 +123,20 @@ public class FN_LN_Gui {
 				if(AgCB.getSelectedItem().equals("Grade 10"))
 				{
 					grade = 10;
-					img.setIcon(img1);
 				}
 				else if(AgCB.getSelectedItem().equals("Grade 11"))
 				{
 					grade = 11;
+					Gui_2 k = new Gui_2();
+					
 				}
 				else
 				{
 					grade = 12;
 				}
 				
-				Dis.setText("First name: " + FN + "         Last name: " + LN + "        Your grade is: " + grade);
+				Dis.setText("First name: " + FN + " | Last name: " + LN + " | Your grade is: " + grade);
 				
-			}
-			public void actionPerformed(ActionEvent e) {
 			}
 		});
 		SB.setBounds(229, 11, 146, 55);
@@ -162,6 +158,10 @@ public class FN_LN_Gui {
 		});
 		CL.setBounds(229, 71, 146, 55);
 		panel.add(CL);
+		
+		panel_1 = new JPanel();
+		panel_1.setBounds(315, 158, 153, 106);
+		panel.add(panel_1);
 		
 		
 	
