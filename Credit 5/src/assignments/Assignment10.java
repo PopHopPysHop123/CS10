@@ -16,13 +16,13 @@ public class Assignment10
 
 	public static void main(String[] args)
 	{
-		try (Scanner userinput = new Scanner(System.in))
+		try (Scanner userinput = new Scanner(System.in)) 
 		{
 			for (int i = 0; i < 3;i++)//repeats the code 3 times
 			{
 				System.out.print("Please enter an integer: ");//asks the user to enter an integer
 				int userint = userinput.nextInt();//records the user's input
-				
+					
 				if (userint % 2 == 0)
 				{
 					System.out.print(userint + " is even.\r");//if the user input is even, display that the input is even
@@ -36,10 +36,10 @@ public class Assignment10
 		
 		catch (Exception e) 
 		{
-			System.out.println("ERROR");//displays "ERROR" when the code doesn't work
+			System.out.println("ERROR");//prints "ERROR" if the code doesn't work
 		}
 	}
-
+	
 }
 /* Screen Dump
 Please enter an integer: 247

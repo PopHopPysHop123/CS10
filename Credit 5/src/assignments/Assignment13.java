@@ -20,40 +20,40 @@ public class Assignment13
 		{
 			System.out.print("Please enter the number of copies to be printed: ");//prompts the user for the number of copies
 			int copies = userinput.nextInt();//records the user's input
-			
+				
 			double pricepercopy = 0;//creates a double for the price per copy
-			
-			if (copies>1000)
+				
+			if (copies>1000)//checks the amount of copies for the price per copy
 			{
-				pricepercopy = 0.25;//each copy is $0.25
+				pricepercopy = 0.25;
 			}
 			else if (750<=copies && copies<=1000)
 			{
-				pricepercopy = 0.26;//each copy is $0.26
+				pricepercopy = 0.26;
 			}
 			else if (500<=copies && copies<=749)
 			{
-				pricepercopy = 0.27;//each copy is $0.27
+				pricepercopy = 0.27;
 			}
 			else if (100<=copies && copies<=499)
 			{
-				pricepercopy = 0.28;//each copy is $0.28
+				pricepercopy = 0.28;
 			}
 			else
 			{
-				pricepercopy = 0.30;//each copy is $0.30
+				pricepercopy = 0.30;
 			}
-			
+				
 			double total = pricepercopy * copies;//records the total cost
-			
+				
 			double actualtotal = (double) (Math.round(total*100.0)/100.0);//rounds the total to two decimal places
-			
+				
 			System.out.println("Price per copy is: $" + pricepercopy + "\rTotal cost is: $" + actualtotal);//displays the price per copy and the total cost
 		}
 		
-		catch (Exception e)
+		catch (Exception e) 
 		{
-			System.out.println("ERROR");//displays "ERROR" when the code doesn't work
+			System.out.println("ERROR");//prints "ERROR" if the code doesn't work
 		}
 	}
 

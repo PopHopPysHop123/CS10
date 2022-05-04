@@ -16,40 +16,40 @@ public class Assignement14
 
 	public static void main(String[] args) 
 	{
-		try (Scanner userinput = new Scanner(System.in))
+		try (Scanner userinput = new Scanner(System.in)) 
 		{
 			System.out.print("How old are you? ");//prompts the user for an age
 			int age = userinput.nextInt();//records the user's age
 			
 			String stage = "";//creates a variable for the stage that the user is at
-			if (age > 18)//the user is an adult
+			if (age > 18)//checks if the user is an adult or not
 			{
 				stage = "adult";
 			}
 			else
 			{
-				switch (age)
+				switch (age)//chooses a stage of life based on the user's age
 				{
-					case 1,2,3,4,5://the user is a toddler
+					case 1,2,3,4,5:
 						stage = "toddler"; break;
-					case 6,7,8,9,10://the user is a child
+					case 6,7,8,9,10:
 						stage = "child"; break;
-					case 11,12://the user is a preteen
+					case 11,12:
 						stage = "preteen"; break;
-					default://the user is a teen
+					default:
 						stage = "teen";
 				}
 			}
-			
+				
 			System.out.println("You are a(n) " + stage + ".");//displays what stage the user is at
 		}
 		
-		catch (Exception e)
+		catch (Exception e) 
 		{
-			System.out.println("ERROR");//displays "ERROR" when the code doesn't work
+			System.out.println("ERROR");//prints "ERROR" if the code doesn't work
 		}
 	}
-
+	
 }
 /* Screen Dump
 How old are you? 16

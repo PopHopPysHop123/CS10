@@ -21,43 +21,43 @@ public class Assignment12
 			System.out.print("Please enter a grade percentage: ");//prompts the user for a grade percentage
 			int grade = userinput.nextInt();//records the user's input
 			String letter_gr = "";//creates a string for the letter grade
-			
-			switch(grade)
+				
+			switch(grade)//chooses a letter grade based on the grade percentage
 			{
-				case 50,51,52,53,54://letter grade is D
+				case 50,51,52,53,54:
 					letter_gr = "D"; break;
 			
-				case 55,56,57,58,59://letter grade is D+
+				case 55,56,57,58,59:
 					letter_gr = "D+"; break;
-					
-				case 60,61,62,63,64://letter grade is C
+						
+				case 60,61,62,63,64:
 					letter_gr = "C"; break;
-				
-				case 65,66,67,68,69://letter grade is C+
-					letter_gr = "C+"; break;
-				
-				case 70,71,72,73,74://letter grade is B
-					letter_gr = "B"; break;
 					
-				case 75,76,77,78,79://letter grade is B+
+				case 65,66,67,68,69:
+					letter_gr = "C+"; break;
+					
+				case 70,71,72,73,74:
+					letter_gr = "B"; break;
+						
+				case 75,76,77,78,79:
 					letter_gr = "B+"; break;
-				
-				case 80,81,82,83,84,85,86,87,88,89://letter grade is A
+					
+				case 80,81,82,83,84,85,86,87,88,89:
 					letter_gr = "A"; break;
-				
-				case 90,91,92,93,94,95,96,97,98,99,100://letter grade is A+
+					
+				case 90,91,92,93,94,95,96,97,98,99,100:
 					letter_gr = "A+"; break;
-				
-				default://letter grade is F
+					
+				default:
 					letter_gr = "F";
 			}
-			
+				
 			System.out.println("The corresponding letter grade is: " + letter_gr);//displays the letter grade
 		}
 		
-		catch (Exception e)
+		catch (Exception e) 
 		{
-			System.out.println("ERROR");//displays "ERROR" when the code doesn't work
+			System.out.println("ERROR");//prints "ERROR" if the code doesn't work
 		}
 	}
 
