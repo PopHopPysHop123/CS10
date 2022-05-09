@@ -18,45 +18,64 @@ public class Chem_App
 	{
 		try (Scanner userinput = new Scanner(System.in)) 
 		{
-			String user_choice = "";
-			
-			while (user_choice != "e")
+			int user_choice = -1;
+			System.out.print("Welcome to the Chemistry program!\r");
+			while (user_choice != 0)
 			{
-				System.out.print("Welcome to the Chemistry program!\r" 
-				+ "Please enter the letter p for the pH and pOH converter, c for the concentration calculator, or q for practice calculation questions. To quit the program, enter the letter e: ");//prompts the user for an application to use
-				user_choice = userinput.next();//records the input
-			
+				System.out.print("Please enter 1 for the pH and pOH converter, 2 for the concentration calculator,"
+				+ " or 3 for practice calculation questions. To quit the program, enter 0: ");//prompts the user for an application to use
+				user_choice = userinput.nextInt();//records the input
+				
 				switch (user_choice)//chooses the application that the user inputted
 				{
-					case "p":
-						System.out.print("\rPlease enter the unit of measurement you want to convert (pH or pOH): ");//asks the user for the unit being converted
+					case 1:
+						System.out.print("\rEnter the unit you want to convert (pH or pOH): ");//asks the user for the unit being converted
 						String pH_pOH = userinput.next();//records the input
 					
-						switch (pH_pOH)
+						switch (pH_pOH)//chooses the unit that the user inputted
 						{
 							case "pH":
-								System.out.print("\rPlease enter a pH value: ");//asks the user for a pH value
+								System.out.print("Please enter a pH value: ");//asks the user for a pH value
 								double pH = userinput.nextDouble();//records the input
-								double pH_convert = 14 - pH;//calculates the convertion
-								System.out.println("The pOH level is " + pH_convert + ".");//displays the pOH level
+								
+								double pH_convert = Math.round((14 - pH)*100.0)/100.0;//calculates the conversion
+								
+								System.out.println("The corresponding pOH level is " + pH_convert + ".\r");//displays the pOH level
+								
 								break;
 							
 							case "pOH":
-								System.out.print("\rPlease enter a pOH value: ");//asks the user for a pOH value
+								System.out.print("Please enter a pOH value: ");//asks the user for a pOH value
 								double pOH = userinput.nextDouble();//records the input
-								double pOH_convert = 14 - pOH;//calculates the convertion
-								System.out.println("The pH level is " + pOH_convert + ".");//displays the pH level
+								
+								double pOH_convert = Math.round((14 - pOH)*100.0)/100.0;//calculates the conversion
+								
+								System.out.println("The corresponding pH level is " + pOH_convert + ".\r");//displays the pH level
+								
 								break;
 						}
-					
-					
+						
 					break;
+					
+					case 2:
+						System.out.print("\rPlease enter a mol value: ");//asks the user for a mol value
+						double mol = userinput.nextDouble();//records the input
+						
+						System.out.print("Please enter a volume in litres: ");//asks the user for a volume (L)
+						double volume = userinput.nextDouble();//records the input
 				
-				
-				
-				
+						double concentration = Math.round((mol / volume)*100.0)/100.0;//calculates the concentration
+						
+						System.out.println("The concentration to the nearest hundreth is " + concentration + " mol/L.\r");
+						
+					break;
+					
+					case 3:
+						
 				}
 			}
+			
+			System.out.println("\rThank you for using our program!");
 		}
 		
 		catch (Exception e) 
