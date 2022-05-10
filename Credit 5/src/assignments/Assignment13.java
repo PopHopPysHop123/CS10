@@ -18,8 +18,8 @@ public class Assignment13
 	{
 		try (Scanner userinput = new Scanner(System.in))
 		{
-			System.out.print("Please enter the number of copies to be printed: ");//prompts the user for the number of copies
-			int copies = userinput.nextInt();//records the user's input
+			System.out.print("Please enter the number of copies to be printed: ");//prompts for the number of copies
+			int copies = userinput.nextInt();//records the input
 				
 			double pricepercopy = 0;//creates a double for the price per copy
 				

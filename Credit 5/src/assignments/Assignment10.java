@@ -20,16 +20,16 @@ public class Assignment10
 		{
 			for (int i = 0; i < 3;i++)//repeats the code 3 times
 			{
-				System.out.print("Please enter an integer: ");//asks the user to enter an integer
-				int userint = userinput.nextInt();//records the user's input
+				System.out.print("Please enter an integer: ");//asks for an integer
+				int userint = userinput.nextInt();//records the input
 					
-				if (userint % 2 == 0)
+				if (userint % 2 == 0)//checks if the number is divisible by two
 				{
-					System.out.print(userint + " is even.\r");//if the user input is even, display that the input is even
+					System.out.print(userint + " is even.\r");
 				}
 				else
 				{
-					System.out.print(userint + " is odd.\r");//if the user input is odd, display that the input is odd
+					System.out.print(userint + " is odd.\r");
 				}
 			}
 		}

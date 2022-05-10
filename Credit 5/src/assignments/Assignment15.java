@@ -24,8 +24,8 @@ public class Assignment15
 			double answer = (double) num1 / num2;//records the answer
 			double round_answer = (double) (Math.round(answer*100.0)/100.0);//rounds the answer to two decimal places
 				
-			System.out.println("What is " + num1 + "/" + num2 + "? Answer to two decimal places.");//prompts the user for an answer
-			double user_answ = userinput.nextDouble();//records the user's answer
+			System.out.println("What is " + num1 + "/" + num2 + "? Answer to two decimal places.");//prompts for an answer
+			double user_answ = userinput.nextDouble();//records the answer
 				
 			if (round_answer == user_answ)//compares the user's answer with the actual answer
 			{
@@ -33,7 +33,7 @@ public class Assignment15
 			}
 			else
 			{
-				System.out.print("Wrong! The correct answer was " + round_answer + "!");//tells the user their answer is wrong and shows the right answer
+				System.out.print("Wrong! The correct answer was " + round_answer + "!");//displays that the user is wrong and the right answer
 			}
 		}
 		

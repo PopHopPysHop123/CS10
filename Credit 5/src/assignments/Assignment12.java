@@ -18,8 +18,8 @@ public class Assignment12
 	{
 		try (Scanner userinput = new Scanner(System.in))
 		{
-			System.out.print("Please enter a grade percentage: ");//prompts the user for a grade percentage
-			int grade = userinput.nextInt();//records the user's input
+			System.out.print("Please enter a grade percentage: ");//prompts for a grade percentage
+			int grade = userinput.nextInt();//records the input
 			String letter_gr = "";//creates a string for the letter grade
 				
 			switch(grade)//chooses a letter grade based on the grade percentage

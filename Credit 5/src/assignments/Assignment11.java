@@ -18,8 +18,8 @@ public class Assignment11
 	{
 		try (Scanner userinput = new Scanner(System.in)) 
 		{
-			System.out.print("Please enter any three digits: ");//asks the user for three digits
-			int userdigits = userinput.nextInt();//records the user's input
+			System.out.print("Please enter any three digits: ");//asks for three digits
+			int userdigits = userinput.nextInt();//records the input
 				
 			int firstD = userdigits / 100;//records the first digit
 			int secondD = (userdigits % 100) / 10;//records the second digit
@@ -65,7 +65,7 @@ public class Assignment11
 				
 			int av = sum / 3;//records the average of all of the digits
 				
-			System.out.println//displays the results to the user
+			System.out.println//displays the results
 			(
 				"The largest digit is: " + large +
 				"\rThe smallest digit is:" + small +

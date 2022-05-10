@@ -20,8 +20,8 @@ public class Assignment16
 		{
 			int secret_num = 1 + (int) (Math.random()*20);//comes up with a random number from 1 to 20
 				
-			System.out.print("Please enter a number from 1 to 20: ");//prompts the user for a number between 1 & 20
-			int user_num = userinput.nextInt();//records the user's input
+			System.out.print("Please enter a number from 1 to 20: ");//prompts for a number between 1 & 20
+			int user_num = userinput.nextInt();//records the input
 				
 			System.out.println("The secret number is: " + secret_num);//displays the secret number
 				

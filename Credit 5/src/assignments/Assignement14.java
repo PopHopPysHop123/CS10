@@ -18,7 +18,7 @@ public class Assignement14
 	{
 		try (Scanner userinput = new Scanner(System.in)) 
 		{
-			System.out.print("How old are you? ");//prompts the user for an age
+			System.out.print("How old are you? ");//prompts for the user's age
 			int age = userinput.nextInt();//records the user's age
 			
 			String stage = "";//creates a variable for the stage that the user is at

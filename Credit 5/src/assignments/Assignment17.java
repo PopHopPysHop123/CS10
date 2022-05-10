@@ -23,7 +23,7 @@ public class Assignment17
 			while (gpa != -1)//repeats the code if gpa doesnt equal -1
 			{
 				System.out.print("Please enter your gpa or -1 to quit the program: ");//prompts the user for their gpa or to quit the program
-				gpa = userinput.nextDouble();//records the user's input
+				gpa = userinput.nextDouble();//records the input
 				
 				if (gpa >= 3.8)//checks if the user's gpa qualify for a certain honors distinction
 				{
@@ -43,7 +43,7 @@ public class Assignment17
 				}
 			}
 			
-			System.out.print("Thanks you for using our program, have a great day!");//displays if the user quits the program
+			System.out.print("Thanks you for using our program, have a great day!");//displays when the user quits the program
 		}
 		
 		catch (Exception e) 
