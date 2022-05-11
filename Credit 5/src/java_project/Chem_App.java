@@ -43,6 +43,7 @@ public class Chem_App
 								double pH_convert = Math.round((14 - pH)*100.0)/100.0;//calculates the conversion
 								
 								System.out.println("The corresponding pOH level is " + pH_convert + ".\r");//displays the pOH level
+								
 								break;
 							
 							case "pOH":
@@ -52,8 +53,10 @@ public class Chem_App
 								double pOH_convert = Math.round((14 - pOH)*100.0)/100.0;//calculates the conversion
 								
 								System.out.println("The corresponding pH level is " + pOH_convert + ".\r");//displays the pH level
+								
 								break;
 						}
+						
 					break;
 					
 					case 2:
@@ -69,6 +72,7 @@ public class Chem_App
 						double concentration = Math.round(((m/M)/ volume)*100.0)/100.0;//calculates the concentration
 						
 						System.out.println("The concentration to the nearest hundreth is " + concentration + " mol/L.\r");//displays the concentration
+						
 					break;
 					
 					case 3:
@@ -99,8 +103,6 @@ public class Chem_App
 							{
 								System.out.println("Wrong! The correct answer was " + c + " mol/L.\r");//displays that the user is incorrect and the answer.
 							}
-							
-							
 						}
 						
 						double mark = score / num_questions;//calculates the user's percentage on the quiz
@@ -121,6 +123,7 @@ public class Chem_App
 						{
 							System.out.println("You got a 100% on the quiz!!!\r");
 						}
+						
 					break;
 				}
 			}
