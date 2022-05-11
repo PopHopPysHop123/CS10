@@ -19,11 +19,13 @@ public class Chem_App
 		try (Scanner userinput = new Scanner(System.in)) 
 		{
 			int user_choice = -1;
+			
 			System.out.print("Welcome to the Chemistry program!\r");
+			
 			while (user_choice != 0)
 			{
 				System.out.print("Please enter 1 for the pH and pOH converter, 2 for the concentration calculator,"
-				+ " or 3 for practice calculation questions. To quit the program, enter 0: ");//prompts for an application to use
+				+ " or 3 for the quiz generator. To quit the program, enter 0: ");//prompts for an application to use
 				user_choice = userinput.nextInt();//records the input
 				
 				switch (user_choice)//chooses the application that the user inputted
@@ -70,8 +72,10 @@ public class Chem_App
 					break;
 					
 					case 3:
-						System.out.print("\rPlease enter how many practice questions you want to answer: ");//asks for the amount of questions
+						System.out.print("\rPlease enter the amount of questions for the quiz: ");//asks for the amount of questions
 						int num_questions = userinput.nextInt();//records the input
+						
+						double score = 0;
 						
 						for (int q = 0; q < num_questions; q++)
 						{
@@ -88,11 +92,34 @@ public class Chem_App
 							if (user_answ == c)//compares the user's answer with the actual answer
 							{
 								System.out.println("Correct!\r");//displays that the user is correct
+								
+								score++;
 							}
 							else
 							{
 								System.out.println("Wrong! The correct answer was " + c + " mol/L.\r");//displays that the user is incorrect and the answer.
 							}
+							
+							
+						}
+						
+						double mark = score / num_questions;//calculates the user's percentage on the quiz
+							
+						if (mark < 0.5)//checks the user's performance on the quiz and displays it
+						{
+							System.out.println("You failed the quiz!\r");
+						}
+						else if ((mark >= 0.5)&&(mark <= 0.79))
+						{
+							System.out.println("You got an average score!\r");
+						}
+						else if ((mark >= 0.8)&&(mark <= 0.99))
+						{
+							System.out.println("You got an above average score!!\r");
+						}
+						else
+						{
+							System.out.println("You got a 100% on the quiz!!!\r");
 						}
 					break;
 				}
@@ -110,36 +137,38 @@ public class Chem_App
 }
 /* Screen Dump
 Welcome to the Chemistry program!
-Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for practice calculation questions. To quit the program, enter 0: 1
+Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for the quiz generator. To quit the program, enter 0: 1
 
-Enter the unit you want to convert (pH or pOH): pOH
-Please enter a pOH value: 9.28
-The corresponding pH level is 4.72.
+Enter the unit you want to convert (pH or pOH): pH
+Please enter a pH value: 2.84
+The corresponding pOH level is 11.16.
 
-Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for practice calculation questions. To quit the program, enter 0: 2
+Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for the quiz generator. To quit the program, enter 0: 2
 
-Please enter the mass in grams: 8.21
-Please enter the molar mass: 12.62
-Please enter the volume in litres: 25.77
+Please enter the mass in grams: 21.74
+Please enter the molar mass: 34.65
+Please enter the volume in litres: 25
 The concentration to the nearest hundreth is 0.03 mol/L.
 
-Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for practice calculation questions. To quit the program, enter 0: 3
+Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for the quiz generator. To quit the program, enter 0: 3
 
-Please enter how many practice questions you want to answer: 3
-12.23 moles of solute is dissolved in water to make 44.42 L of solution. What is the concentration to the nearest hundredth?
-0.28
+Please enter the amount of questions for the quiz: 3
+33.26 moles of solute is dissolved in water to make 41.83 L of solution. What is the concentration to the nearest hundredth?
+0.80
 Correct!
 
-4.66 moles of solute is dissolved in water to make 16.5 L of solution. What is the concentration to the nearest hundredth?
-0.25
-Wrong! The correct answer was 0.28 mol/L.
-
-4.53 moles of solute is dissolved in water to make 0.52 L of solution. What is the concentration to the nearest hundredth?
-8.71
+2.5 moles of solute is dissolved in water to make 1.2 L of solution. What is the concentration to the nearest hundredth?
+2.08
 Correct!
 
-Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for practice calculation questions. To quit the program, enter 0: 0
+0.47 moles of solute is dissolved in water to make 46.19 L of solution. What is the concentration to the nearest hundredth?
+0.4
+Wrong! The correct answer was 0.01 mol/L.
 
-Thank you for using our program!
+You got an average score!
+
+Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for the quiz generator. To quit the program, enter 0: 0
+
+Thank you for using the program!
 
  */
