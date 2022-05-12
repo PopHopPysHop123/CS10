@@ -125,6 +125,24 @@ public class Chem_App
 						}
 						
 					break;
+					
+					case 4:
+						System.out.print("\rCongrats you've found the secret application!"
+						+ " If you guess the computer's number correctly, you get a prize!!\rEnter a whole number from 0 to 50: ");//explains the secret program
+						int user_num = userinput.nextInt();
+						
+						int comp_num = (int) (Math.random() * 50);//generates a random number from 0-50
+						
+						if (user_num == comp_num)//compares the user's number with the computer's number
+						{
+							System.out.println("Congrats you won $1!!!!");//displays that the user won the program
+						}
+						else
+						{
+							System.out.println("You guessed incorrectly, better luck next time!\r");//displays that the user lost
+						}
+					
+					break;
 				}
 			}
 			
@@ -169,6 +187,12 @@ Correct!
 Wrong! The correct answer was 0.01 mol/L.
 
 You got an average score!
+
+Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for the quiz generator. To quit the program, enter 0: 4
+
+Congrats you've found the secret application! If you guess the computer's number correctly, you get a prize!!
+Enter a whole number from 0 to 50: 12
+You guessed incorrectly, better luck next time!
 
 Please enter 1 for the pH and pOH converter, 2 for the concentration calculator, or 3 for the quiz generator. To quit the program, enter 0: 0
 
