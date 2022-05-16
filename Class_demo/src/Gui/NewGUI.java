@@ -1,4 +1,4 @@
-package class_demos;
+package Gui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -7,7 +7,7 @@ import java.awt.event.*;
 public class NewGUI {
 
 	private JFrame frame;
-	ImageIcon img1 = new ImageIcon("../Class_demos/src/class_demos/Gull_portrait_ca_usa.jpg");
+	ImageIcon img1 = new ImageIcon("../Class_demo/src/Gui/Gull_portrait_ca_usa.jpg");
 	/**
 	 * Launch the application.
 	 */
@@ -57,3 +57,4 @@ public class NewGUI {
 		frame.getContentPane().add(btnNewButton);
 	}
 }
+

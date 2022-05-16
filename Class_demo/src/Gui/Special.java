@@ -1,4 +1,4 @@
-package class_demos;
+package Gui;
 
 import java.awt.EventQueue;
 
@@ -120,3 +120,4 @@ public class Special {
 		panel.add(btnClear);
 	}
 }
+

@@ -1,4 +1,4 @@
-package class_demos;
+package Gui;
 
 import java.awt.EventQueue;
 import java.awt.Window;
@@ -127,7 +127,7 @@ public class FN_LN_Gui {
 				else if(AgCB.getSelectedItem().equals("Grade 11"))
 				{
 					grade = 11;
-					Gui_2 k = new Gui_2();
+					Gui_3 k = new Gui_3();
 					
 				}
 				else

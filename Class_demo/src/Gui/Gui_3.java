@@ -1,11 +1,11 @@
-package class_demos;
+package Gui;
 
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class Gui_2 
+public class Gui_3 
 {
 
 	private JFrame frame;
@@ -15,13 +15,17 @@ public class Gui_2
 	 */
 	public static void main(String[] args)
 	{
-		EventQueue.invokeLater(new Runnable()
+		EventQueue.invokeLater(/**
+		 * @author 16017004
+		 *
+		 */
+		new Runnable()
 		{
 			public void run()
 			{
 				try 
 				{
-					Gui_2 window = new Gui_2();
+					Gui_3 window = new Gui_3();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -33,7 +37,7 @@ public class Gui_2
 	/**
 	 * Create the application.
 	 */
-	public Gui_2() 
+	public Gui_3() 
 	{
 		initialize();
 	}
@@ -52,3 +56,4 @@ public class Gui_2
 		frame.getContentPane().add(panel);
 	}
 }
+
