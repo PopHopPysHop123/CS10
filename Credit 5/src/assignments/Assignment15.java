@@ -21,7 +21,7 @@ public class Assignment15
 			int num1 = 1 + (int) (Math.random()*10);//picks a random number
 			int num2 = 1 + (int) (Math.random()*10);//picks another random number
 				
-			double answer = (double) num1 / num2;//records the answer
+			double answer = (double) num1 / num2;//calculates the answer
 			double round_answer = (double) (Math.round(answer*100.0)/100.0);//rounds the answer to two decimal places
 				
 			System.out.println("What is " + num1 + "/" + num2 + "? Answer to two decimal places.");//prompts for an answer
